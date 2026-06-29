@@ -185,3 +185,19 @@ try:
     print(f"the price before discount {total}")
 except ValueError:
     print("all must be a number")
+# step 9 - Grade System
+try:
+    grade = int(input("Grade: "))
+
+    if grade >= 90:
+        print("Excellent")
+    elif grade >= 70:
+        print("Good")
+    elif grade >= 55:
+        print("Pass")
+    else:
+        print("Fail")
+    # the bug is logic bug
+    # The error in the test is that it continues to check the cells even though it found one condition.
+except ValueError:
+    print("the score must be a number")
