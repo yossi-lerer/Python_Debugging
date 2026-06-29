@@ -31,3 +31,18 @@ try:
     print(prices[item])
 except KeyError:
     print("Item not found")
+# step 5 - Multiple Error Types
+numbers = [100, 200, 300]
+
+try:
+    index = int(input("Choose index: "))
+    divider = int(input("Choose divider: "))
+
+    result = numbers[index] / divider
+    print(result)
+except IndexError:
+    print("The number it is not index in the list")
+except ZeroDivisionError:
+    print("it is not passible to divishion by zero")
+except ValueError:
+    print("it is not a number in the input")
