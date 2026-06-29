@@ -61,3 +61,12 @@ if name == "admin":
 else:
     print("Welcome user")
 # The problem here is a syntax error. try except is a solution for observable or unobservable logic errors that are not directly related to code syntax.
+# step 8 - Wrong Discount
+price = 100
+discount = 20
+
+final_price = (price / 100) * (100 - discount)
+print(final_price)
+# 99.8
+# The problem you had was a mistake in writing the calculation process.
+# This created a situation where the calculation was the price minus the discount divided by 100, which is not a percentage calculation process.
