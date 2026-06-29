@@ -101,3 +101,12 @@ except ZeroDivisionError:
     print("zero division")
 finally:
     print("Calculator closed")
+# part 2
+# step 1  Temperature Converter
+try:
+    celsius = input("Celsius: ")
+    # the next line is risky line
+    fahrenheit = int(celsius) * 9 / 5 + 32 
+    print(fahrenheit)
+except ValueError:
+    print("Temperature must be a number")
