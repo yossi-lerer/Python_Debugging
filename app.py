@@ -93,7 +93,11 @@ try:
         print(num1 * num2)
     elif op == "/":
         print(num1 / num2)
+    else:
+        print("Unknown operator")
 except ValueError:
     print("plese dont enter not a number")
 except ZeroDivisionError:
     print("zero division")
+finally:
+    print("Calculator closed")
