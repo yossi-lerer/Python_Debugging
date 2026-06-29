@@ -141,3 +141,13 @@ except ValueError:
     print("the amout must be a number")
 except KeyError:
     print("the product must contain ")
+# step 5 - File Name Check Without File Handling
+files = ["data.txt", "users.csv", "notes.txt"]
+
+try:
+    choice = int(input("Choose file number: "))
+    print(files[choice])
+except ValueError:
+    print("must be a number")
+except IndexError:
+    print("no file in this index")
