@@ -201,3 +201,29 @@ try:
     # The error in the test is that it continues to check the cells even though it found one condition.
 except ValueError:
     print("the score must be a number")
+# step 10 - Mini Bank Action
+balance = 100
+
+try:
+    action = input("Action: ")
+    amount = int(input("Amount: "))
+
+    if action == "deposit":
+        print(f"balance is {balance}")
+        balance = balance + amount
+        print(f"new balance is {balance}")
+    elif action == "withdraw":
+        if amount > balance:
+            print("Not enough money")
+        else: 
+            print(f"balance is {balance}")
+            balance = balance - amount
+            print(f"new balance is {balance}")
+
+    else:
+        print("Unknown action")
+    print("Balance:", balance)
+except ValueError:
+    print("amout must be a number")
+finally:
+    print("Bank action finished")
