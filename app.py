@@ -14,3 +14,10 @@ try:
     print(a / b)
 except ZeroDivisionError:
     print("Cannot divide by zero")
+# step 3 - Number From List
+try:
+    numbers = [10, 20, 30]
+    index = int(input("Choose index: "))
+    print(numbers[index])
+except IndexError:
+    print("Index not found")
