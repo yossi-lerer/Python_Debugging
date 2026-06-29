@@ -127,3 +127,17 @@ average = total / len(scores)
 print(average)
 # output is 33.333333333333336
 # logic bug
+# step 4 - Product Price
+products = {
+    "pen": 4,
+    "notebook": 12
+}
+try:
+    product = input("Product: ")
+    amount = int(input("Amount: "))
+
+    print(products[product] * amount)
+except ValueError:
+    print("the amout must be a number")
+except KeyError:
+    print("the product must contain ")
