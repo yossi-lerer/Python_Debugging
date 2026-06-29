@@ -102,7 +102,7 @@ except ZeroDivisionError:
 finally:
     print("Calculator closed")
 # part 2
-# step 1  Temperature Converter
+# step 1 - Temperature Converter
 try:
     celsius = input("Celsius: ")
     # the next line is risky line
@@ -110,3 +110,9 @@ try:
     print(fahrenheit)
 except ValueError:
     print("Temperature must be a number")
+# step 2 - First Letter
+try:
+    word = input("Enter word: ")
+    print(word[0])
+except IndexError:
+    print("Word is empty")
