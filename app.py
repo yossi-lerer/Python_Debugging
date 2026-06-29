@@ -46,3 +46,11 @@ except ZeroDivisionError:
     print("it is not passible to divishion by zero")
 except ValueError:
     print("it is not a number in the input")
+# step 6 - Finally Message
+try:
+    score = int(input("Enter score: "))
+    print("Your score is", score)
+except ValueError:
+    print("Invalid score")
+finally:
+    print("Check finished")
