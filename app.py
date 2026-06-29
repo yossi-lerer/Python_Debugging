@@ -80,3 +80,20 @@ else:
     print("Wrong password")
 # The bug is a logical bug. The mistake is that the system logs in users who type an incorrect password.
 # the bug is in the line 77
+# step 10 - Safe Calculator
+try:
+    num1 = int(input("Number 1: "))
+    op = input("Operator: ")
+    num2 = int(input("Number 2: "))
+    if op == "+":
+        print(num1 + num2)
+    elif op == "-":
+        print(num1 - num2)
+    elif op == "*":
+        print(num1 * num2)
+    elif op == "/":
+        print(num1 / num2)
+except ValueError:
+    print("plese dont enter not a number")
+except ZeroDivisionError:
+    print("zero division")
