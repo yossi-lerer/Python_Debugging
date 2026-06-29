@@ -70,3 +70,13 @@ print(final_price)
 # 99.8
 # The problem you had was a mistake in writing the calculation process.
 # This created a situation where the calculation was the price minus the discount divided by 100, which is not a percentage calculation process.
+# step 9 - Login Attempts Logic Bug
+password = "abc123"
+guess = input("Enter password: ")
+
+if guess == password:
+    print("Login successful")
+else:
+    print("Wrong password")
+# The bug is a logical bug. The mistake is that the system logs in users who type an incorrect password.
+# the bug is in the line 77
