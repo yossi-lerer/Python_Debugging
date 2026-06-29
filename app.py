@@ -151,3 +151,14 @@ except ValueError:
     print("must be a number")
 except IndexError:
     print("no file in this index")
+# step 6 - Wrong Maximum
+numbers = [4, 10, 2, 8]
+maximum = 0
+
+for number in numbers:
+    if number > maximum:
+        maximum = number
+
+print(maximum)
+# wrong output is 0 
+# the bug is logic bug in loop
