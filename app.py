@@ -162,3 +162,15 @@ for number in numbers:
 print(maximum)
 # wrong output is 0 
 # the bug is logic bug in loop
+# step 7 - User Profile 
+user = {
+    "name": "Dana",
+    "age": 25
+}
+try:
+    field = input("Choose field: ")
+    print(user[field].upper())
+except AttributeError:
+    print("it is not passible to uppercase a number")
+except KeyError:
+    print("the key not find")
