@@ -174,3 +174,14 @@ except AttributeError:
     print("it is not passible to uppercase a number")
 except KeyError:
     print("the key not find")
+# step 8 - Order Total 
+try:
+    price = int(input("Price: "))
+    amount = int(input("Amount: "))
+
+    print(f"the price before discount {price}")
+    if amount > 3:
+        total = (price / 100) * 100 - amount
+    print(f"the price before discount {total}")
+except ValueError:
+    print("all must be a number")
