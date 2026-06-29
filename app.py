@@ -116,3 +116,14 @@ try:
     print(word[0])
 except IndexError:
     print("Word is empty")
+# step 3 - Average Score
+scores = [90, 80, 100]
+total = 0
+for score in scores:
+    total += score
+print(total)
+
+average = total / len(scores)
+print(average)
+# output is 33.333333333333336
+# logic bug
